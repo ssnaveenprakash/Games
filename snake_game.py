@@ -5,12 +5,13 @@ from collections import namedtuple
 
 
 # Features
-# 1. tail should grow
-# 2. food generation
+
+# 1. food generation/consumption
+# 2. tail should grow on food consumption
 # 3. wall hit detection 
-# 4. self hit detection 
-# 5. move through walls
-# 6. wall healing 
+# 4. self collision detection
+# 5. soft walls - snake can go inside walls
+# 6. wall healing - walls will be rebuilded after snake passes through the wall 
 
 class Grid:
     def __init__(self, rows, columns):
