@@ -1,11 +1,10 @@
-from copy import deepcopy
 import os
 import random
+from copy import deepcopy
 from collections import namedtuple
 
 
 # Features
-
 # 1. food generation/consumption
 # 2. tail should grow on food consumption
 # 3. wall hit detection 
