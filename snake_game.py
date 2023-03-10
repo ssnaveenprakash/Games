@@ -1,6 +1,5 @@
 import os
 import random
-from copy import deepcopy
 from collections import namedtuple
 
 
@@ -213,7 +212,7 @@ class Snake:
         can_move = self.can_snake_move(direction)
         if can_move:
             new_head_position = self.get_next_head_position(direction)
-            tmp_snake = deepcopy(self.snake)
+            tmp_snake = self.snake.copy()
             is_food_consumed = self.consume_food(new_head_position, tmp_snake)
             prev_last_tail_position = self.move_snake_body(
                 new_head_position, tmp_snake)
